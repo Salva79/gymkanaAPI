@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Gymkana  Santo Tom&aacute;s 2016/17</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Gymkana  Santo Tom&aacute;s 2016/17</h1>
+      <nav>
+        <ul>
+          <li>
+            <a ui-sref="score" ui-sref-active="active">Score</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main ui-view></main>
+
+    <script src="vendor/angular.js"></script>
+    <script src="vendor/angular-resource.js"></script>
+    <script src="vendor/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services/lb-services.js"></script>
+    <script src="js/controllers/score.js"></script>
+  </body>
+</html>

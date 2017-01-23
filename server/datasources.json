@@ -1,0 +1,12 @@
+{
+  "mysqlDS": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "gymkana1617",
+    "password": "alumno",
+    "name": "mysqlDS",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
