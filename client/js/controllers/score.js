@@ -11,4 +11,16 @@ angular
     };
     $scope.reload();
     $interval($scope.reload, 5000);
-  }]);
+  }])
+  .controller('AddEquipoController', ['$scope', '$state', 'Registro', function($scope, $state, Registro) {
+    $scope.submitForm = function() {
+      Registro
+        .create({
+          equipo: $scope.registro.equipo
+        })
+        .$promise
+        .then(function() {
+          $state.go('score');
+        });
+};  }])
+  ;

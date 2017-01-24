@@ -9,15 +9,18 @@ angular
     'lbServices'
   ])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
-      $urlRouterProvider) {
-    $stateProvider
-      .state('score', {
-        url: '/score',
-        templateUrl: 'views/score.html',
-        controller: 'ScoreController'
-      });
-
-    $urlRouterProvider.otherwise('score');
-  }])
-  .run(['$rootScope', '$state', 'LoopBackAuth', function($rootScope, $state, LoopBackAuth) {
-  }]);
+        $urlRouterProvider) {
+        $stateProvider
+          .state('add-equipo', {
+            url: '/add-equipo',
+            templateUrl: 'views/formulario.html',
+            controller: 'AddEquipoController'
+          })
+          .state('score', {
+            url: '/score',
+            templateUrl: 'views/score.html',
+            controller: 'ScoreController'
+          });
+            $urlRouterProvider.otherwise('score');
+          }])
+          .run(['$rootScope', '$state', 'LoopBackAuth', function($rootScope, $state, LoopBackAuth) {}]);
